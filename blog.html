@@ -61,16 +61,16 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold text-light" href="index.html">Felipe Tabares</a>
+      <a class="navbar-brand fw-bold text-light" href="index.html" rel="home">Felipe Tabares</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog Personal</a></li>
-          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
-          <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html" rel="prev">Resume</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html" rel="canonical">Blog Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html" rel="next">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="referencias.html" rel="next">Referencias</a></li>
         </ul>
       </div>
     </div>
@@ -89,79 +89,197 @@
   <!-- Blog Content -->
   <main class="container my-5">
     <div class="row justify-content-center">
+      <!-- Carta 1: Validador2 (Video) -->
       <div class="col-md-6 mb-4">
-        <!-- Próximamente Card 1 -->
-        <div class="card blog-card mb-5 shadow-lg border-0 animate__animated animate__fadeIn">
-          <div class="card-body p-5 text-center">
-            <i class="fas fa-hourglass-half fa-2x mb-3 text-primary"></i>
-            <h2 class="fw-bold mb-3" style="color:#24788f;">Próximamente</h2>
-            <p class="text-muted mb-4">Estamos preparando contenido interesante para ti.</p>
-            <p class="mb-3">En este blog compartiré mis experiencias, conocimientos y aprendizajes sobre:</p>
-            <ul class="list-unstyled mb-4" style="font-size:1.15rem;">
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Smart Contracts</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Tecnología Blockchain</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Software</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Inteligencia Artificial</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Y mucho más...</li>
-            </ul>
-            <p class="fw-semibold text-success mb-0">¡Muy pronto estaré publicando contenido!</p>
+        <div class="card blog-card shadow-lg border-0 animate__animated animate__fadeIn">
+          <div class="card-img-top position-relative" style="height: 300px; overflow: hidden;">
+            <video class="w-100 h-100" style="object-fit: cover;" muted loop>
+              <source src="img/validador2.mp4" type="video/mp4">
+              Tu navegador no soporta el video.
+            </video>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));"></div>
+            <div class="position-absolute bottom-0 start-0 p-4 text-white">
+              <h3 class="fw-bold mb-2">Mi Experiencia como Validador en Avalanche</h3>
+              <p class="mb-3">Descubre mi viaje en la configuración y mantenimiento de un nodo validador en la red Avalanche...</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalValidador">
+                Ver más <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Carta 2: Bootcamp avax (Imagen) -->
       <div class="col-md-6 mb-4">
-        <!-- Próximamente Card 2 -->
-        <div class="card blog-card mb-5 shadow-lg border-0 animate__animated animate__fadeIn">
-          <div class="card-body p-5 text-center">
-            <i class="fas fa-hourglass-half fa-2x mb-3 text-primary"></i>
-            <h2 class="fw-bold mb-3" style="color:#24788f;">Próximamente</h2>
-            <p class="text-muted mb-4">Estamos preparando contenido interesante para ti.</p>
-            <p class="mb-3">En este blog compartiré mis experiencias, conocimientos y aprendizajes sobre:</p>
-            <ul class="list-unstyled mb-4" style="font-size:1.15rem;">
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Smart Contracts</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Tecnología Blockchain</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Software</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Inteligencia Artificial</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Y mucho más...</li>
-            </ul>
-            <p class="fw-semibold text-success mb-0">¡Muy pronto estaré publicando contenido!</p>
+        <div class="card blog-card shadow-lg border-0 animate__animated animate__fadeIn">
+          <div class="card-img-top position-relative" style="height: 300px; overflow: hidden;">
+            <picture>
+              <source srcset="img/Bootcamp avax2.webp" type="image/webp">
+              <img src="img/Bootcamp avax2.webp" class="w-100 h-100" style="object-fit: cover;" alt="Bootcamp Avalanche">
+            </picture>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));"></div>
+            <div class="position-absolute bottom-0 start-0 p-4 text-white">
+              <h3 class="fw-bold mb-2">Mi Participación en el Bootcamp Avalanche</h3>
+              <p class="mb-3">Una experiencia inmersiva en el ecosistema Avalanche y el desarrollo de smart contracts...</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBootcamp">
+                Ver más <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Carta 3: l1 avax (Imagen) -->
       <div class="col-md-6 mb-4">
-        <!-- Próximamente Card 3 -->
-        <div class="card blog-card mb-5 shadow-lg border-0 animate__animated animate__fadeIn">
-          <div class="card-body p-5 text-center">
-            <i class="fas fa-hourglass-half fa-2x mb-3 text-primary"></i>
-            <h2 class="fw-bold mb-3" style="color:#24788f;">Próximamente</h2>
-            <p class="text-muted mb-4">Estamos preparando contenido interesante para ti.</p>
-            <p class="mb-3">En este blog compartiré mis experiencias, conocimientos y aprendizajes sobre:</p>
-            <ul class="list-unstyled mb-4" style="font-size:1.15rem;">
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Smart Contracts</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Tecnología Blockchain</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Software</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Inteligencia Artificial</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Y mucho más...</li>
-            </ul>
-            <p class="fw-semibold text-success mb-0">¡Muy pronto estaré publicando contenido!</p>
+        <div class="card blog-card shadow-lg border-0 animate__animated animate__fadeIn">
+          <div class="card-img-top position-relative" style="height: 300px; overflow: hidden;">
+            <picture>
+              <source srcset="img/L1 avax2.webp" type="image/webp">
+              <img src="img/L1 avax2.webp" class="w-100 h-100" style="object-fit: cover;" alt="L1 Avalanche">
+            </picture>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));"></div>
+            <div class="position-absolute bottom-0 start-0 p-4 text-white">
+              <h3 class="fw-bold mb-2">Desarrollo en L1 de Avalanche</h3>
+              <p class="mb-3">Explorando las capacidades y ventajas de desarrollar en la capa base de Avalanche...</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalL1">
+                Ver más <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Carta 4: Trump (Imagen) -->
       <div class="col-md-6 mb-4">
-        <!-- Próximamente Card 4 -->
-        <div class="card blog-card mb-5 shadow-lg border-0 animate__animated animate__fadeIn">
-          <div class="card-body p-5 text-center">
-            <i class="fas fa-hourglass-half fa-2x mb-3 text-primary"></i>
-            <h2 class="fw-bold mb-3" style="color:#24788f;">Próximamente</h2>
-            <p class="text-muted mb-4">Estamos preparando contenido interesante para ti.</p>
-            <p class="mb-3">En este blog compartiré mis experiencias, conocimientos y aprendizajes sobre:</p>
-            <ul class="list-unstyled mb-4" style="font-size:1.15rem;">
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Smart Contracts</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Tecnología Blockchain</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Desarrollo de Software</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Inteligencia Artificial</li>
-              <li><i class="fas fa-circle-notch text-primary me-2"></i>Y mucho más...</li>
-            </ul>
-            <p class="fw-semibold text-success mb-0">¡Muy pronto estaré publicando contenido!</p>
+        <div class="card blog-card shadow-lg border-0 animate__animated animate__fadeIn">
+          <div class="card-img-top position-relative" style="height: 300px; overflow: hidden;">
+            <picture>
+              <source srcset="img/Trump2.webp" type="image/webp">
+              <img src="img/Trump2.webp" class="w-100 h-100" style="object-fit: cover;" alt="Trump">
+            </picture>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));"></div>
+            <div class="position-absolute bottom-0 start-0 p-4 text-white">
+              <h3 class="fw-bold mb-2">Trump y su Impacto en el Mercado Cripto</h3>
+              <p class="mb-3">Análisis de cómo las declaraciones y acciones de Trump afectan al mercado de criptomonedas...</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTrump">
+                Ver más <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modales para cada artículo -->
+    <!-- Modal Validador -->
+    <div class="modal fade" id="modalValidador" tabindex="-1" aria-labelledby="modalValidadorLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalValidadorLabel">Mi Experiencia como Validador en Avalanche</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9 mb-4">
+              <video controls>
+                <source src="img/validador2.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+              </video>
+            </div>
+            <h4 class="fw-bold mb-3">Mi Viaje como Validador en Avalanche: Seguridad Reforzada con TEE</h4>
+            <p class="mb-3">Hace unas semanas, di un paso emocionante en mi exploración del ecosistema Avalanche al desarrollar mi primer nodo validador en la red de prueba Fuji. Para esta implementación, quise ir más allá y centrarme en la seguridad avanzada, utilizando Docker para integrar un **TEE (Trusted Execution Environment)**.</p>
+            <p class="mb-3">Un Entorno de Ejecución Confiable (TEE) es un área segura dentro de un procesador principal. Garantiza que los datos y el código que se ejecutan dentro de él estén protegidos en términos de confidencialidad e integridad. En el contexto de un validador de blockchain, esto es crucial.</p>
+            <p class="mb-3">Mi enfoque consistió en clonar el repositorio AvalancheGo y desplegar el validador, pero con una diferencia clave: **cloné las llaves privadas del validador para guardarlas y gestionarlas directamente dentro del sistema TEE**.</p>
+            <p class="mb-3">Esta práctica, relativamente novedosa en el ámbito de los validadores, es de suma importancia. Al mantener las llaves privadas en un entorno tan protegido como el TEE, se mitiga significativamente el riesgo de *slashing*. El slashing es una penalización que puede aplicarse a los validadores por comportamientos indebidos (como estar offline o firmar dobles transacciones), resultando en la pérdida de una parte de su stake y sus recompensas.</p>
+            <p class="mb-3">**Implementar TEE en mi validador asegura la no penalización por fallos inesperados o ataques externos que comprometan el entorno operativo principal.** Esto, a su vez, construye una capa adicional de confianza para quienes deciden hacer *stake* de sus criptos en mi validador. Saben que sus fondos están más seguros y que sus recompensas no se verán afectadas por un evento de slashing relacionado con la gestión de las llaves.</p>
+            <p class="mb-3">Fue una experiencia muy enriquecedora configurar esta infraestructura, combinando el despliegue estándar de un validador con la integración de una tecnología de seguridad puntera como TEE para ofrecer un servicio más robusto y fiable a la comunidad Avalanche.</p>
+            <div class="alert alert-info">
+              <i class="fas fa-info-circle me-2"></i>
+              ¿Interesado en convertirte en validador? <a href="mailto:aftb20053@gmail.com" class="alert-link">¡Contáctame!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bootcamp -->
+    <div class="modal fade" id="modalBootcamp" tabindex="-1" aria-labelledby="modalBootcampLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalBootcampLabel">Mi Participación en el Bootcamp Avalanche</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <picture>
+              <source srcset="img/Bootcamp avax2.webp" type="image/webp">
+              <img src="img/Bootcamp avax2.webp" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="Bootcamp Avalanche">
+            </picture>
+            <h4 class="fw-bold mb-3">Mi Inmersión en el Bootcamp de Avalanche: ¡Más allá del Consenso!</h4>
+            <p class="mb-3">¡Qué tal! Les quiero contar sobre una experiencia que viví hace poco y que me abrió un montón la cabeza: participar en un bootcamp intensivo de Avalanche. Fue como hacer un "deep dive" en todo el ecosistema, y la verdad, salí entendiendo cosas que antes me parecían súper complejas.</p>
+            <p class="mb-3">Empecé el bootcamp sabiendo lo básico, pero rápidamente pude sumergirme en conceptos mucho más profundos. Algo que me pareció fascinante y que comprendí mucho mejor fue el mecanismo de consenso de Avalanche. Es diferente a lo que se ve normalmente y entender cómo logra ser tan rápido y eficiente fue un gran "¡Eureka!" para mí. Aprendí cómo los validadores interactúan para llegar a un acuerdo de forma casi instantánea, lo cual es clave para la velocidad de la red.</p>
+            <p class="mb-3">Pero el bootcamp no se quedó solo en la teoría del consenso. Nos metimos de lleno en la práctica: a desarrollar smart contracts, a entender la estructura de las diferentes blockchains dentro de Avalanche (la C-Chain para smart contracts, la X-Chain para activos, la P-Chain para validadores y subnets), y a jugar con el desarrollo de aplicaciones descentralizadas. Poner las manos en el código y ver cómo todo cobra vida es lo más gratificante.</p>
+            <p class="mb-3">Fue una experiencia súper completa que combinó el aprendizaje técnico con la oportunidad de conectar con otros entusiastas de Avalanche. Si tienen ganas de entender Avalanche de verdad y pasar de la teoría a la práctica.</p>
+            <div class="alert alert-info">
+              <i class="fas fa-info-circle me-2"></i>
+              ¿Quieres saber más sobre el bootcamp? <a href="mailto:aftb20053@gmail.com" class="alert-link">¡Escríbeme!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal L1 -->
+    <div class="modal fade" id="modalL1" tabindex="-1" aria-labelledby="modalL1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalL1Label">Desarrollo en L1 de Avalanche</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <picture>
+              <source srcset="img/L1 avax2.webp" type="image/webp">
+              <img src="img/L1 avax2.webp" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="L1 Avalanche">
+            </picture>
+            <h4 class="fw-bold mb-3">Creando mi Propia Blockchain: Explorando el Desarrollo en L1 (Subnets) de Avalanche</h4>
+            <p class="mb-3">¡Imaginen esto: tener la capacidad de crear tu propia blockchain, personalizada y funcionando justo como la necesitas! Esa fue una de las partes más alucinantes del bootcamp de Avalanche para mí. Aprendimos a meternos de lleno en el desarrollo de lo que en Avalanche llamamos L1s, o más comúnmente, Subnets.</p>
+            <p class="mb-3">Las Subnets son, básicamente, el siguiente gran paso de Avalanche en el mundo Web3. Son como si pudieras tener tu red blockchain privada, pero aprovechando toda la seguridad y el poder de la red principal de validadores de Avalanche. Es un concepto súper potente porque te da una flexibilidad increíble.</p>
+            <p class="mb-3">Durante el bootcamp, no solo nos quedamos en la teoría. ¡Pusimos manos a la obra! Desplegamos nuestra propia Subnet en la testnet de Fuji. Fue increíble verla cobrar vida y entender paso a paso cómo funciona por dentro. Incluso creamos un token nativo para nuestra Subnet, lo cual nos permitió interactuar con ella y ver las transacciones en tiempo real.</p>
+            <p class="mb-3">Lo más genial de esto es la personalización. Puedes configurar un montón de cosas, desde los *gas fees* (sí, ¡decidir cuánto cuesta cada operación!) hasta reglas específicas para tu comunidad o aplicación. Es como tener un lienzo en blanco para innovar y construir justo la solución blockchain que necesitas, sin estar limitado por las reglas de redes ya existentes.</p>
+            <p class="mb-3">Desarrollar una Subnet me hizo darme cuenta del potencial enorme que tiene Avalanche para escalar y permitir que cada proyecto o empresa tenga su propio espacio optimizado en el ecosistema Web3. ¡Una experiencia que definitivamente recomiendo si te pica la curiosidad por ir más allá!</p>
+            <div class="alert alert-info">
+              <i class="fas fa-info-circle me-2"></i>
+              ¿Interesado en desarrollo L1? <a href="mailto:aftb20053@gmail.com" class="alert-link">¡Hablemos!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Trump -->
+    <div class="modal fade" id="modalTrump" tabindex="-1" aria-labelledby="modalTrumpLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalTrumpLabel">Trump y su Impacto en el Mercado Cripto</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <picture>
+              <source srcset="img/Trump2.webp" type="image/webp">
+              <img src="img/Trump2.webp" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="Trump">
+            </picture>
+            <h4 class="fw-bold mb-3">Mi Bautismo en Cripto: Entre el Boom de la IA y la Montaña Rusa de $TRUMP</h4>
+            <p class="mb-3">¡Madre mía, qué viaje fue mi inicio en el mundo cripto! Caí en este universo justo cuando la fiebre por los proyectos de Inteligencia Artificial estaba en su punto más alto. Veía cosas como $KET que sonaban súper innovadoras, y me picaba la curiosidad por ser parte de todo eso.</p>
+            <p class="mb-3">Pero, ¿saben con qué moneda decidí dar el salto final? ¡Con $TRUMP! Sí, la memecoin inspirada en el **actual presidente**. Fue una decisión de principiante total, lo admito. La emoción del momento, ver cómo subía y subía, me llevó a hacer lo clásico: **comprar justo en el All-Time High (ATH)**. Pensé "esto no para de subir", y pum... compré en la cima de la ola.</p>
+            <p class="mb-3">¿Qué pasó después? Pues lo que le pasa a muchos novatos: el precio empezó a bajar. No fue una caída dramática de la noche a la mañana, pero sí lo suficiente para sentir esa punzada de "uh oh". Fue mi primera lección dura sobre la volatilidad del mercado y sobre no dejarme llevar por el FOMO (el miedo a perderse algo).</p>
+            <p class="mb-3">Esta experiencia con $TRUMP, más allá del resultado financiero, me enseñó un montón sobre cómo las figuras públicas, las noticias o incluso las tendencias (como las memecoins) pueden tener un impacto gigante y a veces impredecible en el precio de las criptomonedas. No es solo tecnología y fundamentos; la psicología del mercado y la influencia mediática juegan un papel enorme, especialmente en proyectos más especulativos.</p>
+            <p class="mb-3">Mirando hacia atrás, fue un "bautismo" intenso pero necesario. Esa primera incursión, aunque me costó aprenderla, me abrió los ojos a la complejidad del mercado cripto y me motivó a investigar más a fondo antes de invertir. ¡Definitivamente una anécdota de mis inicios que no olvido!</p>
+            <div class="alert alert-info">
+              <i class="fas fa-info-circle me-2"></i>
+              ¿Quieres discutir sobre el impacto político en cripto? <a href="mailto:aftb20053@gmail.com" class="alert-link">¡Conversemos!</a>
+            </div>
           </div>
         </div>
       </div>
