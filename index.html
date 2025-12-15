@@ -48,20 +48,20 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   
   <!-- Preload critical assets -->
-  <link rel="preload" href="https://www.cv-felipetabares.xyz/styles.css" as="style">
+  <link rel="preload" href="styles.css" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-  
+
   <!-- Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <link href="https://www.cv-felipetabares.xyz/styles.css" rel="stylesheet" media="print" onload="this.media='all'">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="styles.css" rel="stylesheet">
+
   <!-- Fallback for browsers that don't support print media -->
   <noscript>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://www.cv-felipetabares.xyz/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </noscript>
   
   <!-- Cache-Control headers -->
@@ -263,16 +263,28 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="index.html" rel="canonical">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="Redes.html" rel="next">Social Media</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html" rel="canonical" data-i18n="nav.resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="Redes.html" rel="next" data-i18n="nav.social">Social Media</a></li>
         </ul>
+        <div class="lang-switcher ms-lg-3 mt-2 mt-lg-0" id="langSwitcher">
+          <div class="lang-pill">
+            <div class="lang-pill-bg"></div>
+            <button class="lang-btn active" data-lang="es">
+              <span class="lang-text">ES</span>
+            </button>
+            <button class="lang-btn" data-lang="en">
+              <span class="lang-text">EN</span>
+            </button>
+            <div class="lang-slider"></div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header class="main-header resume-header text-center">
-    <img src="img/profile.jpg" alt="Foto de Perfil" class="profile-img mb-3 d-block mx-auto">
+    <img src="img/profile.jpg" alt="Foto de Perfil" class="profile-img mb-3 d-block mx-auto" data-i18n-alt="header.profileAlt">
     <h1 class="fw-bold mb-1">Andres Felipe Tabares Benavides</h1>
     <h2 class="fs-4 mb-3">Software Engineer | DevOps Engineer</h2>
     <div class="container">
@@ -280,7 +292,7 @@
         <div class="col-12 col-lg-10 col-xl-9">
           <div class="card section-card mx-auto" style="max-width:1100px;">
             <div class="card-body px-5 py-4">
-              <p class="mb-0" style="font-size:1.18rem;line-height:1.6;text-align:center;">Ingeniero de software en formación especializado en arquitecturas cloud y blockchain, con experiencia comprobada en el diseño y despliegue de sistemas automatizados escalables. Experto en Infrastructure as Code (Terraform), orquestación de workflows y desarrollo full-stack con JavaScript/Node.js. Dominio avanzado en AWS (EC2, Lambda, ECS), bases de datos (PostgreSQL, Redis) y protocolos Web3 para aplicaciones descentralizadas. Certificado en Avalanche Blockchain y con sólida experiencia en DevOps, CI/CD y arquitecturas serverless. Apasionado por crear soluciones innovadoras que combinan eficiencia operativa con tecnología de vanguardia.
+              <p class="mb-0" style="font-size:1.18rem;line-height:1.6;text-align:center;" data-i18n="header.summary">Ingeniero de software en formación especializado en arquitecturas cloud y blockchain, con experiencia comprobada en el diseño y despliegue de sistemas automatizados escalables. Experto en Infrastructure as Code (Terraform), orquestación de workflows y desarrollo full-stack con JavaScript/Node.js. Dominio avanzado en AWS (EC2, Lambda, ECS), bases de datos (PostgreSQL, Redis) y protocolos Web3 para aplicaciones descentralizadas. Certificado en Avalanche Blockchain y con sólida experiencia en DevOps, CI/CD y arquitecturas serverless. Apasionado por crear soluciones innovadoras que combinan eficiencia operativa con tecnología de vanguardia.
               </p>
             </div>
           </div>
@@ -297,28 +309,28 @@
         <!-- Personal Details -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-user"></i>Personal</div>
+            <div class="section-title"><i class="fas fa-user"></i><span data-i18n="personal.title">Personal</span></div>
             <ul class="list-unstyled mb-0">
-              <li><strong>Nombre:</strong> Andres Felipe Tabares Benavides</li>
-              <li><strong>Cargo Actual:</strong> Ingeniero de Software</li>
-              <li><strong>Correo:</strong> <a href="mailto:aftb20053@gmail.com">aftb20053@gmail.com</a></li>
-              <li><strong>Dirección:</strong> Colombia, Bogotá D.C</li>
+              <li><strong data-i18n="personal.name">Nombre:</strong> Andres Felipe Tabares Benavides</li>
+              <li><strong data-i18n="personal.position">Cargo Actual:</strong> <span data-i18n="personal.positionValue">Ingeniero de Software</span></li>
+              <li><strong data-i18n="personal.email">Correo:</strong> <a href="mailto:aftb20053@gmail.com">aftb20053@gmail.com</a></li>
+              <li><strong data-i18n="personal.location">Dirección:</strong> Colombia, Bogotá D.C</li>
             </ul>
           </div>
         </div>
         <!-- Company Experience -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-building"></i>Experiencia Empresarial</div>
+            <div class="section-title"><i class="fas fa-building"></i><span data-i18n="company.title">Experiencia Empresarial</span></div>
             <div class="company-item mb-3">
               <h6 class="fw-bold mb-2">UltravioletaDAO LLC</h6>
-              <p class="text-muted small mb-2">Wyoming, Estados Unidos</p>
+              <p class="text-muted small mb-2" data-i18n="company.location">Wyoming, Estados Unidos</p>
               <div class="d-flex flex-column gap-2">
                 <a href="https://ultravioletadao.xyz/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
-                  <i class="fas fa-globe"></i> Sitio Web
+                  <i class="fas fa-globe"></i> <span data-i18n="company.website">Sitio Web</span>
                 </a>
                 <a href="https://wyobiz.wyo.gov/business/FilingDetails.aspx?eFNum=231152217007187086250219198232174206067107184230" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">
-                  <i class="fas fa-certificate"></i> Certificado LLC
+                  <i class="fas fa-certificate"></i> <span data-i18n="company.certificate">Certificado LLC</span>
                 </a>
                 <a href="https://x.com/UltravioletaDAO" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">
                   <i class="fab fa-x-twitter"></i> @UltravioletaDAO
@@ -330,7 +342,7 @@
         <!-- Skills -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-tools"></i>Habilidades</div>
+            <div class="section-title"><i class="fas fa-tools"></i><span data-i18n="skills.title">Habilidades</span></div>
             <div class="mb-2">AWS - Cómputo</div>
             <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 50%"></div></div>
             <span class="badge bg-secondary">EC2</span>
@@ -343,17 +355,17 @@
             <span class="badge bg-secondary">Vault</span>
             <div class="mt-3 mb-2">Solidity</div>
             <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 50%"></div></div>
-            <span class="badge bg-secondary">Contratos Inteligentes</span>
-            <span class="badge bg-secondary">Despliegue</span>
+            <span class="badge bg-secondary" data-i18n="skills.smartContracts">Contratos Inteligentes</span>
+            <span class="badge bg-secondary" data-i18n="skills.deployment">Despliegue</span>
             <span class="badge bg-secondary">ERC-20</span>
             <div class="mt-3 mb-2">SQL Server</div>
             <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 75%"></div></div>
-            <span class="badge bg-secondary">Configuración</span>
-            <span class="badge bg-secondary">Integración</span>
-            <span class="badge bg-secondary">Procedimientos Almacenados</span>
+            <span class="badge bg-secondary" data-i18n="skills.configuration">Configuración</span>
+            <span class="badge bg-secondary" data-i18n="skills.integration">Integración</span>
+            <span class="badge bg-secondary" data-i18n="skills.storedProcedures">Procedimientos Almacenados</span>
             <div class="mt-3 mb-2">Windows Server</div>
             <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 65%"></div></div>
-            <span class="badge bg-secondary">Administración</span>
+            <span class="badge bg-secondary" data-i18n="skills.administration">Administración</span>
             <span class="badge bg-secondary">Powershell</span>
             <span class="badge bg-secondary">IIS</span>
             <span class="badge bg-secondary">AD</span>
@@ -375,7 +387,7 @@
             <span class="badge bg-secondary">Automation</span>
             <span class="badge bg-secondary">Data Analysis</span>
             <span class="badge bg-secondary">Web3.py</span>
-            <div class="mt-3 mb-2">N8N - Automatización de Flujos</div>
+            <div class="mt-3 mb-2" data-i18n="skills.n8nTitle">N8N - Automatización de Flujos</div>
             <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 70%"></div></div>
             <span class="badge bg-secondary">Workflow Automation</span>
             <span class="badge bg-secondary">Integration</span>
@@ -386,17 +398,17 @@
         <!-- Languages -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-language"></i>Idiomas</div>
+            <div class="section-title"><i class="fas fa-language"></i><span data-i18n="languages.title">Idiomas</span></div>
             <div class="mb-3">
               <div class="d-flex align-items-center mb-2">
-                <span class="me-2">Español</span>
+                <span class="me-2" data-i18n="languages.spanish">Español</span>
                 <div class="progress flex-grow-1" style="height: 6px;">
                   <div class="progress-bar bg-primary" style="width: 90%"></div>
                 </div>
                 <span class="ms-2">90%</span>
               </div>
               <div class="d-flex align-items-center">
-                <span class="me-2">Inglés</span>
+                <span class="me-2" data-i18n="languages.english">Inglés</span>
                 <div class="progress flex-grow-1" style="height: 6px;">
                   <div class="progress-bar bg-primary" style="width: 60%"></div>
                 </div>
@@ -408,10 +420,10 @@
         <!-- Interests -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-star"></i>Intereses</div>
+            <div class="section-title"><i class="fas fa-star"></i><span data-i18n="interests.title">Intereses</span></div>
             <span class="badge bg-warning text-dark">Blockchain</span>
-            <span class="badge bg-warning text-dark">Contratos Inteligentes</span>
-            <span class="badge bg-warning text-dark">IA</span>
+            <span class="badge bg-warning text-dark" data-i18n="interests.smartContracts">Contratos Inteligentes</span>
+            <span class="badge bg-warning text-dark" data-i18n="interests.ai">IA</span>
             <span class="badge bg-warning text-dark">TEE (Trusted Execution Environment)</span>
           </div>
         </div>
@@ -421,41 +433,41 @@
         <!-- Work Experience -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-briefcase"></i>Experiencia Laboral</div>
-            <div class="mb-2"><strong>Experiencia laboral en formación</strong></div>
-            <p>Destaco en Python, Node.js y tengo dominio en el uso de Git y GitHub para control de versiones, tengo experiencia en SQL. He participado en comunidades de web3 con gobernanzas y votaciones descentralizadas por medio de plataformas de streaming, el cual se componen de un token nativo de la comunidad en el blockchain de Avalanche.
+            <div class="section-title"><i class="fas fa-briefcase"></i><span data-i18n="experience.title">Experiencia Laboral</span></div>
+            <div class="mb-2"><strong data-i18n="experience.subtitle">Experiencia laboral en formación</strong></div>
+            <p data-i18n="experience.description">Destaco en Python, Node.js y tengo dominio en el uso de Git y GitHub para control de versiones, tengo experiencia en SQL. He participado en comunidades de web3 con gobernanzas y votaciones descentralizadas por medio de plataformas de streaming, el cual se componen de un token nativo de la comunidad en el blockchain de Avalanche.
               En UltravioletaDAO LLC desarrollé un sistema de automatización end-to-end para Bounties, implementando N8N con PostgreSQL/Redis en EC2, bot Web3 serverless en Lambda, y aplicación full-stack con backend desacoplado. Gestioné toda la infraestructura con Terraform, logrando 100% de automatización y reducción del 70% en costos operativos.</p>
           </div>
         </div>
         <!-- Education -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-graduation-cap"></i>Educación</div>
+            <div class="section-title"><i class="fas fa-graduation-cap"></i><span data-i18n="education.title">Educación</span></div>
             <ul class="mb-0">
-              <li>Bachiller @ Colegio Elisa Borrero de Pastrana</li>
-              <li>Ingeniería de Software @ Universidad Manuela Beltrán</li>
-              <li>Certificación @ Cisco Networking Academy</li>
-              <li><a href="img/certificado_avalanche.pdf" target="_blank" style="text-decoration: none; color: inherit;">Certificación en Blockchain @ Avalanche</a> <span style="color: #0dcaf0; font-size: 0.9em;">→ Click to view certificate</span></li>
+              <li><span data-i18n="education.highschool">Bachiller</span> @ Colegio Elisa Borrero de Pastrana</li>
+              <li><span data-i18n="education.software">Ingeniería de Software</span> @ Universidad Manuela Beltrán</li>
+              <li><span data-i18n="education.certification">Certificación</span> @ Cisco Networking Academy</li>
+              <li><a href="img/certificado_avalanche.pdf" target="_blank" style="text-decoration: none; color: inherit;"><span data-i18n="education.blockchain">Certificación en Blockchain</span> @ Avalanche</a> <span style="color: #0dcaf0; font-size: 0.9em;" data-i18n="education.viewCert">→ Click para ver certificado</span></li>
             </ul>
           </div>
         </div>
         <!-- Projects -->
         <div class="card section-card">
           <div class="card-body">
-            <div class="section-title"><i class="fas fa-project-diagram"></i>Proyectos</div>
+            <div class="section-title"><i class="fas fa-project-diagram"></i><span data-i18n="projects.title">Proyectos</span></div>
             <div class="mb-3">
               <div class="mb-2">
-                <strong>AVOCA</strong> 
+                <strong>AVOCA</strong>
                 <div class="project-links mt-1">
                   <a href="https://felipe-tabares.github.io/AVOCA/" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                    <i class="fas fa-globe"></i> Sitio Web
+                    <i class="fas fa-globe"></i> <span data-i18n="projects.website">Sitio Web</span>
                   </a>
                   <a href="https://x.com/AVOCA_gov" target="_blank" class="btn btn-sm btn-outline-info">
                     <i class="fab fa-x-twitter"></i> @AVOCA_gov
                   </a>
                 </div>
               </div>
-              <p>Desarrollo de un sistema descentralizado de regulación de votaciones en conjuntos residenciales, priorizando la equidad y transparencia en la toma de decisiones, generando un impacto social respecto a la responsabilidad sobre el bien común.</p>
+              <p data-i18n="projects.avocaDesc">Desarrollo de un sistema descentralizado de regulación de votaciones en conjuntos residenciales, priorizando la equidad y transparencia en la toma de decisiones, generando un impacto social respecto a la responsabilidad sobre el bien común.</p>
               <span class="badge bg-primary">Solidity</span>
               <span class="badge bg-primary">AWS</span>
               <span class="badge bg-primary">ERC-20</span>
@@ -463,17 +475,17 @@
               <span class="badge bg-primary">n8n</span>
             </div>
             <div class="mb-3">
-              <div class="mb-2"><strong>Miembro certificado del programa de Avax Team 1</strong></div>
-              <p>Miembro certificado del ecosistema Avalanche, con certificaciones como "Avalanche Fundamentals", participando activamente en la red, creando contenido como videos, concursando y ganando bounties, y desarrollando en su propia red, como el sistema de gobernanza habitacional o el sistema de apuestas $UVT, todo sobre Avalanche. Entusiasta de las novedades de la red, investigo y desarrollo sobre smart contracts L1 como el nuevo eERC-20, lo que hace de mi trabajo una pasión por el desarrollo WEB3.</p>
+              <div class="mb-2"><strong data-i18n="projects.avaxTeamTitle">Miembro certificado del programa de Avax Team 1</strong></div>
+              <p data-i18n="projects.avaxTeamDesc">Miembro certificado del ecosistema Avalanche, con certificaciones como "Avalanche Fundamentals", participando activamente en la red, creando contenido como videos, concursando y ganando bounties, y desarrollando en su propia red, como el sistema de gobernanza habitacional o el sistema de apuestas $UVT, todo sobre Avalanche. Entusiasta de las novedades de la red, investigo y desarrollo sobre smart contracts L1 como el nuevo eERC-20, lo que hace de mi trabajo una pasión por el desarrollo WEB3.</p>
               <span class="badge bg-primary">Avalanche</span>
-              <span class="badge bg-primary">Miembro Certificado</span>
+              <span class="badge bg-primary" data-i18n="projects.certifiedMember">Miembro Certificado</span>
               <span class="badge bg-primary">Team1</span>
               <span class="badge bg-primary">Blockchain</span>
             </div>
             <div>
             <div class="mb-3">
-              <div class="mb-2"><strong>Despliegue de validador de Avalanche Con TEE</strong> — Práctica de Seguridad y Validación</div>
-              <p>Desplegué un validador de Avalanche con Avalanchego en WSL utilizando un Docker container para correr el validador. Se utilizó Scone SIM para realizar el entorno TEE donde se almacenaron las llaves privadas del validador. Aunque Avalanche no tiene Slashing, desplegué el entorno de pruebas TEE para hacer una práctica del despliegue.</p>
+              <div class="mb-2"><strong data-i18n="projects.validatorTitle">Despliegue de validador de Avalanche Con TEE</strong> — <span data-i18n="projects.validatorSubtitle">Práctica de Seguridad y Validación</span></div>
+              <p data-i18n="projects.validatorDesc">Desplegué un validador de Avalanche con Avalanchego en WSL utilizando un Docker container para correr el validador. Se utilizó Scone SIM para realizar el entorno TEE donde se almacenaron las llaves privadas del validador. Aunque Avalanche no tiene Slashing, desplegué el entorno de pruebas TEE para hacer una práctica del despliegue.</p>
               <span class="badge bg-primary">Avalanche</span>
               <span class="badge bg-primary">TEE</span>
               <span class="badge bg-primary">Docker</span>
@@ -482,8 +494,8 @@
             </div>
 
             <div class="mb-3">
-              <div class="mb-2"><strong>Sistema de Automatización de Bounties Web3</strong> — UltravioletaDAO LLC</div>
-              <p>Diseñé e implementé un sistema end-to-end de automatización de Bounties que integra N8N como orquestador de workflows, PostgreSQL y Redis en AWS EC2 para persistencia de alto rendimiento. Desarrollé un bot serverless en AWS Lambda para firmas de wallets Web3 que interactúa programáticamente con Snapshot. La solución incluye una aplicación full-stack en JavaScript con backend desacoplado en Lambda. Toda la infraestructura fue gestionada mediante Terraform (IaC), logrando automatización del 100% del flujo, reducción del 70% en costos operativos y despliegues reproducibles con CI/CD automatizado.</p>
+              <div class="mb-2"><strong data-i18n="projects.bountiesTitle">Sistema de Automatización de Bounties Web3</strong> — UltravioletaDAO LLC</div>
+              <p data-i18n="projects.bountiesDesc">Diseñé e implementé un sistema end-to-end de automatización de Bounties que integra N8N como orquestador de workflows, PostgreSQL y Redis en AWS EC2 para persistencia de alto rendimiento. Desarrollé un bot serverless en AWS Lambda para firmas de wallets Web3 que interactúa programáticamente con Snapshot. La solución incluye una aplicación full-stack en JavaScript con backend desacoplado en Lambda. Toda la infraestructura fue gestionada mediante Terraform (IaC), logrando automatización del 100% del flujo, reducción del 70% en costos operativos y despliegues reproducibles con CI/CD automatizado.</p>
               <span class="badge bg-primary">N8N</span>
               <span class="badge bg-primary">AWS EC2</span>
               <span class="badge bg-primary">AWS Lambda</span>
